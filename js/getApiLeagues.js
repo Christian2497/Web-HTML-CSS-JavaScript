@@ -1,12 +1,6 @@
 "use strict";
 
 const section = document.querySelector(".leagues-list");
-let HEADERS = {
-  'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Origin',
-  'Content-Type': 'application/json', //optional
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
-  'Access-Control-Max-Age': '8640'
-}
 
 function getLeagues(id){
     fetch(`https://apiclient.besoccerapps.com/scripts/api/api.php?key=01da72449d29a7702aba403ec3fb4e98&tz=Europe/Madrid&format=json&req=categories&filter=all
